@@ -5,7 +5,7 @@ class HeaderNormal extends Component {
     return (
       <header className="App-header">
         Todo List
-        <span>Normal Mode</span>
+        <span>Explorer Mode</span>
       </header>
     );
   }

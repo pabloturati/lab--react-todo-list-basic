@@ -18,7 +18,7 @@ class ItemsList extends Component {
   removeItem(itemToRemove) {
     let { taskList } = this.state;
     taskList.splice(itemToRemove, 1);
-    this.setState({ taskList: taskList });
+    this.setState({ taskList });
   }
 
   render() {
