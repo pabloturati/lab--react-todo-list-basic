@@ -9,20 +9,8 @@ class ItemsList extends Component {
     };
   }
 
-  addNewItem(item) {
-    let list = this.state.taskList;
-    list.unshift(item);
-    this.setState({ taskList: list });
-  }
-
-  removeItem(itemToRemove) {
-    let { taskList } = this.state;
-    taskList.splice(itemToRemove, 1);
-    this.setState({ taskList });
-  }
-
   render() {
-    const { taskList } = this.state;
+    const { taskList } = this.props;
 
     return (
       <div className="itemsList">
@@ -32,7 +20,8 @@ class ItemsList extends Component {
               key={index}
               id={index}
               task={task}
-              removeItem={itemToRemove => this.removeItem(itemToRemove)}
+              removeItem={itemIndex => this.props.removeItem(itemIndex)}
+              changeStatus={itemIndex => this.props.changeStatus(itemIndex)}
             />
           );
         })}

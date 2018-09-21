@@ -11,13 +11,18 @@ class Item extends Component {
 
   render() {
     const { name, date, critical } = this.props.task;
+    const { id } = this.props;
     const criticalClass = critical ? "critical" : "";
     const pastClass = this.timeComparer(date) ? "" : "past";
 
     return (
       <div className={`item ${criticalClass} ${pastClass}`}>
         <div>
-          <input className="selectBox" type="checkbox" />
+          <input
+            className="selectBox"
+            type="button"
+            onClick={() => this.props.changeStatus(id)}
+          />
           <p>{name}</p>
           <p>{date}</p>
         </div>

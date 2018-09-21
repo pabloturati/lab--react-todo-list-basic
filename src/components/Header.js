@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class HeaderNormal extends Component {
+class Header extends Component {
   render() {
     return (
       <header className="App-header">
         Todo List
-        <span>Explorer Mode</span>
+        <span>Adventure Mode</span>
       </header>
     );
   }
 }
 
-export default HeaderNormal;
+export default Header;

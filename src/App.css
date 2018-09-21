@@ -1,16 +1,18 @@
+/* rgb(47, 129, 183) Azul*/
+/* rgb(246, 215, 130) Amarillo*/
+/* rgb(229, 77, 66) rojo */
+
 .App {
   height: auto;
   min-height: 500px;
   width: 730px;
   margin: auto;
-  border: 2px solid rgb(246, 215, 130);
+  border: 2px solid rgb(229, 77, 66);
 }
 
-/* rgb(47, 129, 183) */
-
 .App-header {
-  background-color: rgb(246, 215, 130);
-  height: 50px;
+  background-color: rgb(229, 77, 66);
+  height: 100px;
   width: auto;
   margin: auto;
   padding: 20px;
@@ -50,6 +52,20 @@
   align-items: center;
   text-align: left;
 }
+
+.btn-group {
+  margin: 10px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 33%;
+  min-height: 50px;
+}
+
 input.checkbox {
   transform: scale(1.5);
 }
@@ -105,9 +121,8 @@ div.item button {
   font-weight: bold;
 }
 .selectBox {
-  height: 50px;
-  width: 50px;
-  background-color: green;
+  height: 20px;
+  width: 20px;
 }
 
 .itemContainer {

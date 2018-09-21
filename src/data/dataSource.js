@@ -7,13 +7,13 @@ export const taskList = [
   },
   {
     name: "Limpiar Baños",
-    status: false,
+    status: true,
     date: "2018-09-30",
     critical: true
   },
   {
     name: "Pagar Colegiatura",
-    status: false,
+    status: true,
     date: "2018-10-02",
     critical: false
   },
@@ -31,7 +31,7 @@ export const taskList = [
   },
   {
     name: "Pagar Colegiatura",
-    status: false,
+    status: true,
     date: "2017-09-23",
     critical: true
   },

@@ -13,6 +13,8 @@ class SearchBarNormal extends Component {
     const date = this.dateRef.current.value;
     const critical = this.refs.criticalRef.checked;
 
+    if (this.validateInput(value, date)) return;
+
     const newItem = {
       name: value,
       status: false,
@@ -21,6 +23,17 @@ class SearchBarNormal extends Component {
     };
     this.props.addNewItem(newItem);
   };
+
+  validateInput(value, date) {
+    if (value === "") {
+      alert("You must name the item to add to the list");
+      return true;
+    } else if (date === "") {
+      alert("Please set a due date");
+      return true;
+    }
+    return false;
+  }
 
   render() {
     return (
